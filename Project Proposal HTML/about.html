@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <!-- Single centered main window -->
+      <div class="window open centered" style="z-index: 10; width: 700px; height: auto">
+        <div class="title-bar">
+          <span>About Us</span>
+        </div>
+        <div class="window-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nulla nec justo convallis, sit
+            amet convallis mi tincidunt.
+          </p>
+          <img src="images/about-placeholder.png" alt="Project Creator" />
+          <p><button class="return-btn" onclick="location.href='index.html'">← Return to Desktop</button></p>
+        </div>
+      </div>
+
+      <!-- Taskbar -->
+      <div class="taskbar">
+        <div class="start-button" id="startBtn">
+          <img src="images/win98-icon.png" alt="Start" />
+          <span>Start</span>
+        </div>
+        <div class="taskbar-space"></div>
+        <div class="clock" id="clock"></div>
+      </div>
+
+      <!-- Start Menu -->
+      <div class="start-menu hidden" id="startMenu">
+        <ul>
+          <li><a href="Index.html">Return to Desktop</a></li>
+          <li><a href="setup.html">Setup</a></li>
+          <li><a href="development.html">Development</a></li>
+          <li><a href="explorer.html">Internet Explorer</a></li>
+          <li><a href="features.html">New to Windows 98</a></li>
+          <li><a href="requirements.html">System Requirements</a></li>
+          <li><a href="reception.html">Reception</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Windows 98 Project – Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="icon-area">
+        <!-- Desktop Icons -->
+        <!-- ICONS (inside .desktop div) -->
+        <div class="icon" tabindex="0" data-window="win-welcome">
+          <img src="images/welcome.ico" /><span>Welcome</span>
+        </div>
+        <div class="icon" tabindex="0" data-window="win-contact">
+          <img src="images/contact%20us.ico" /><span>Contact Us</span>
+        </div>
+        <div class="icon" tabindex="0" data-window="win-about">
+          <img src="images/about%20us.ico" /><span>About Us</span>
+        </div>
+        <div class="icon" tabindex="0" data-window="win-setup"><img src="images/setup.ico" /><span>Setup</span></div>
+        <div class="icon" tabindex="0" data-window="win-dev">
+          <img src="images/development.ico" /><span>Development</span>
+        </div>
+        <div class="icon" tabindex="0" data-window="win-explorer">
+          <img src="images/internet%20explorer.ico" /><span>Internet Explorer</span>
+        </div>
+        <div class="icon" tabindex="0" data-window="win-features">
+          <img src="images/new%20to%20win98.ico" /><span>New to Windows 98</span>
+        </div>
+        <div class="icon" tabindex="0" data-window="win-requirements">
+          <img src="images/system%20requirements.ico" /><span>System Requirements</span>
+        </div>
+        <div class="icon" tabindex="0" data-window="win-reception">
+          <img src="images/reception.ico" /><span>Reception</span>
+        </div>
+      </div>
+
+      <div class="window open" id="win-welcome" style="width: 500px; height: auto">
+        <div class="title-bar">
+          <span>Welcome to Windows 98</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <h1>Welcome to Windows 98</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Windows 98 marked a significant step forward in
+            personal computing.
+          </p>
+          <img src="images/welcome%20desktop.png" alt="Windows 98 welcome screen" />
+        </div>
+      </div>
+
+      <div class="window" id="win-requirements">
+        <div class="title-bar">
+          <span>System Requirements</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <p>See the basic system requirements needed to run Windows 98.</p>
+          <button onclick="location.href='requirements.html'">Open Full Page</button>
+        </div>
+      </div>
+
+      <div class="window contact-docked open" id="win-contact">
+        <div class="title-bar">
+          <span>Contact Us</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <p>For inquiries or feedback, email us: <a href="mailto:Xcarter@our.ecu.edu.au">Xcarter@our.ecu.edu.au</a></p>
+          <img src="images/contact-us-img.png" alt="Contact form or message concept" width="250" />
+        </div>
+      </div>
+
+      <div class="window" id="win-about">
+        <div class="title-bar">
+          <span>About Us</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <p>Learn about the team and inspiration behind this project.</p>
+          <button onclick="location.href='about.html'">Open Full Page</button>
+        </div>
+      </div>
+      <div class="window" id="win-setup">
+        <div class="title-bar">
+          <span>Setup</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <p>Explore how Windows 98 was installed and configured during setup.</p>
+          <button onclick="location.href='setup.html'">Open Full Page</button>
+        </div>
+      </div>
+      <div class="window" id="win-dev">
+        <div class="title-bar">
+          <span>Development</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <p>Take a look at how Windows 98 was developed behind the scenes.</p>
+          <button onclick="location.href='development.html'">Open Full Page</button>
+        </div>
+      </div>
+      <div class="window" id="win-explorer">
+        <div class="title-bar">
+          <span>Internet Explorer</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <p>Learn about the bundled Internet Explorer and its role in Windows 98.</p>
+          <button onclick="location.href='explorer.html'">Open Full Page</button>
+        </div>
+      </div>
+      <div class="window" id="win-features">
+        <div class="title-bar">
+          <span>New to Windows 98</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <p>Discover the new features introduced in Windows 98.</p>
+          <button onclick="location.href='features.html'">Open Full Page</button>
+        </div>
+      </div>
+      <div class="window" id="win-reception">
+        <div class="title-bar">
+          <span>Reception</span>
+          <button class="close-btn">×</button>
+        </div>
+        <div class="window-body">
+          <p>See how Windows 98 was received by the public and press.</p>
+          <button onclick="location.href='reception.html'">Open Full Page</button>
+        </div>
+      </div>
+
+      <!-- Taskbar -->
+      <div class="taskbar">
+        <div class="start-button" id="startBtn">
+          <img src="images/win98-icon.png" alt="Start" />
+          <span>Start</span>
+        </div>
+        <div class="clock"></div>
+      </div>
+
+      <!-- Start Menu -->
+      <div class="start-menu hidden" tabindex="0" id="startMenu">
+        <ul>
+          <li onclick="closeAllWindows()">Clear Window</li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="setup.html">Setup</a></li>
+          <li><a href="development.html">Development</a></li>
+          <li><a href="explorer.html">Internet Explorer</a></li>
+          <li><a href="features.html">New to Windows 98</a></li>
+          <li><a href="requirements.html">System Requirements</a></li>
+          <li><a href="reception.html">Reception</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
